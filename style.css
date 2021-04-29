@@ -1,0 +1,23 @@
+@tailwild base;
+@tailwind components;
+@tailwind utilities;
+
+.dimHeader {
+    width: 100%;
+    height: 10vh;
+}
+
+.dimMain {
+    width: 100%;
+    height: 90vh;
+}
+
+.dimMain2 {
+    width: 100%;
+    height: 150vh;
+}
+
+.dimCards {
+    width: 217px;
+    height: 224px;
+}

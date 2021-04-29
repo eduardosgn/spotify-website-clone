@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Spotify com Tailwind</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/build.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5325c6a793.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="bg-black dimHeader p-4 py-8 md:p-3 lg:p-2 flex items-center">
+            <div class="container w-full flex items-center mx-auto">
+                <div>
+                    <a href="#"><img src="img/spotify-logo.png" alt="" class="w-32"></a>
+                </div>
+                <div class="flex-1">
+                    <nav>
+                        <ul class="flex justify-end">
+                            <li>
+                                <a href="#">
+                                    <p class="text-white px-3 hover:text-hoverspt transition-all">Premium</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="text-white px-3 hover:text-hoverspt transition-all">Suporte</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="text-white px-3 hover:text-hoverspt transition-all">Baixar</p>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="border-r border-white pr-3 mr-3"></span>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="text-white px-3 hover:text-hoverspt transition-all">Inscrever-se</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="text-white px-3 hover:text-hoverspt transition-all">Entrar</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo -->
+    <main>
+        <div class="dimMain flex items-center justify-center bg-blue-900">
+            <div class="container flex justify-center flex-col items-center">
+                <h1 class="text-9xl text-center text-green-main">
+                    <strong>Spotify Clone</strong>
+                </h1>
+                <p class="text-center text-white mt-10">
+                    Milhões de músicas e podcasts para explorar. E nem precisa de cartão de crédito.
+                </p>
+                <a href="#" class="bg-green-main py-5 px-10 text-center rounded-full mt-10 text-green-900 font-bold w-80 h-15 hover:bg-green-900 transition-all hover:text-white">
+                    <p>BAIXE O SPOTIFY FREE</p>
+                </a>
+            </div>
+        </div>
+        <div class="dimMain2 flex items-center justify-center flex-col">
+            <div class="container flex justify-center items-center border-b border-gray-200 w-8/12 pb-7">
+                <h1 class="text-black text-2xl font-bold">Escolha o seu plano</h1>
+            </div>
+            <div class="container grid grid-cols-4 w-8/12 border-b border-gray-200">
+                <div class="col-span-2"></div>
+                <div class="flex flex-col text-center border-l border-r border-gray-200">
+                    <h2 class="text-black font-bold text-xl mt-9">Grátis</h2>
+                    <p class="text-2xl">R$ 0</p>
+                    <p class="text-sm mt-4">Não precisa de cartão<br>de crédito, mesmo.</p>
+                    <a href="#" class="mx-3 bg-white border-black rounded-full border-solid border-2 py-2 my-3 hover:bg-black hover:text-white transition-all mb-5">
+                        Inscreva-se grátis
+                    </a>
+                </div>
+                <div class="flex flex-col text-center border-r border-gray-200">
+                    <div class="bg-blue-500 text-center">
+                        <p class="text-sm py-1 text-white">1 MÊS GRÁTIS</p>
+                    </div>
+                    <h2 class="text-black font-bold text-xl mt-2">Premium</h2>
+                    <p class="text-2xl">R$ 16,90/mês</p>
+                    <p class="text-sm mt-4">Ouça sem limites.<br>Cancele quando quiser.</p>
+                    <a href="#" class="mx-3 bg-black border-black text-white hover:bg-white hover:text-black rounded-full border-solid border-2 py-2 my-3 transition-all mb-5">
+                        Seja premium
+                    </a>
+                </div>
+            </div>
+            <div class="container grid grid-cols-4 w-8/12">
+                <div class="py-3 border-b border-gray-200 col-span-2">
+                    <p class="text-black font-bold text-lg">Milhões de clássicos e hits atuais</p>
+                </div>
+                <div class=" py-3 col-span-1 text-center border-b border-l border-gray-200">
+                    <i class="fas fa-check"></i>
+                </div>
+                <div class=" py-3 col-span-1 text-center border-b border-l border-gray-200">
+                    <i class="fas fa-check"></i>
+                </div>
+
+                <div class="py-3 border-b border-gray-200 col-span-2">
+                    <p class="text-black font-bold text-lg">Milhões de episódios de podcasts</p>
+                </div>
+                <div class=" py-3 col-span-1 text-center border-b border-l border-gray-200">
+                    <i class="fas fa-check"></i>
+                </div>
+                <div class=" py-3 col-span-1 text-center border-b border-l border-gray-200">
+                    <i class="fas fa-check"></i>
+                </div>
+
+                <div class="py-3 border-b border-gray-200 col-span-2">
+                    <p class="text-black font-bold text-lg">Crie suas próprias playlists</p>
+                </div>
+                <div class=" py-3 col-span-1 text-center border-b border-l border-gray-200">
+                    <i class="fas fa-check"></i>
+                </div>
+                <div class=" py-3 col-span-1 text-center border-b border-l border-gray-200">
+                    <i class="fas fa-check"></i>
+                </div>
+
+                <div class="py-3 border-b border-gray-200 col-span-2">
+                    <p class="text-black font-bold text-lg">Curta playlists feitas só pra você</p>
+                </div>
+                <div class=" py-3 col-span-1 text-center border-b border-l border-gray-200">
+                    <i class="fas fa-check"></i>
+                </div>
+                <div class=" py-3 col-span-1 text-center border-b border-l border-gray-200">
+                    <i class="fas fa-check"></i>
+                </div>
+
+                <div class="py-3 border-b border-gray-200 col-span-2">
+                    <p class="text-black font-bold text-lg">Ouça músicas sem anúncios</p>
+                </div>
+                <div class=" py-3 col-span-1 text-center border-b border-l border-gray-200">
+                </div>
+                <div class=" py-3 col-span-1 text-center border-b border-l border-gray-200">
+                    <i class="fas fa-check"></i>
+                </div>
+
+                <div class="py-3 border-b border-gray-200 col-span-2">
+                    <p class="text-black font-bold text-lg">A música que você quer. Quando quiser.</p>
+                </div>
+                <div class=" py-3 col-span-1 text-center border-b border-l border-gray-200">
+                </div>
+                <div class=" py-3 col-span-1 text-center border-b border-l border-gray-200">
+                    <i class="fas fa-check"></i>
+                </div>
+
+                <div class="py-3 border-b border-gray-200 col-span-2">
+                    <p class="text-black font-bold text-lg">Baixe e ouça músicas no modo offline</p>
+                </div>
+                <div class=" py-3 col-span-1 text-center border-b border-l border-gray-200">
+                </div>
+                <div class=" py-3 col-span-1 text-center border-b border-l border-gray-200">
+                    <i class="fas fa-check"></i>
+                </div>
+
+                <div class="py-3 border-b border-gray-200 col-span-2">
+                    <p class="text-black font-bold text-lg">Som de altíssima qualidade</p>
+                </div>
+                <div class=" py-3 col-span-1 text-center border-b border-l border-gray-200">
+                </div>
+                <div class=" py-3 col-span-1 text-center border-b border-l border-gray-200">
+                    <i class="fas fa-check"></i>
+                </div>
+            </div>
+            <div class="container w-8/12">
+                <div class="mt-1 text-center">
+                    <p class="text-gray-500 text-xs">
+                        <a href="#">Sujeito a Termos e Condições..</a> O mês grátis não está disponível para usuários que já experimentaram o Premium.
+                    </p>
+                </div>
+                <div class="border-solid border-1 border-gray-200 border-2 rounded-xl py-4 mt-4 flex items-center justify-center">
+                    <h3 class="text-lg pr-3">Confira nossos planos Premium para universitários, casais e famílias.</h3>
+                    <a href="#" class="ml-1 py-2 px-6 border-solid border-black text-black text-md border-2 rounded-full">
+                        Ver planos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="w-full bg-black">
+            <div class="container mx-auto py-20 px-12">
+                <div class="grid grid-cols-6">
+                    <div class="col-span-1">
+                        <img src="img/spotify-logo.png" alt="Logo" class="w-32">
+                    </div>
+
+                    <div class=" col-span-1">
+                        <h2 class="text-gray-400 text-xs font-bold mb-4">EMPRESA</h2>
+                        <ul class="text-md text-white">
+                            <li class="mb-4"><a href="#" class="hover:text-green-main">Sobre</a></li>
+                            <li class="mb-4"><a href="#" class="hover:text-green-main">Empregos</a></li>
+                            <li class="mb-4"><a href="#" class="hover:text-green-main">For the Record</a></li>
+                        </ul>
+                    </div>
+
+                    <div class=" col-span-1">
+                        <h2 class="text-gray-400 text-xs font-bold mb-4">COMUNIDADES</h2>
+                        <ul class="text-md text-white">
+                            <li class="mb-4"><a href="#" class="hover:text-green-main">Para Artistas</a></li>
+                            <li class="mb-4"><a href="#" class="hover:text-green-main">Desenvolvedores</a></li>
+                            <li class="mb-4"><a href="#" class="hover:text-green-main">Publicidade</a></li>
+                            <li class="mb-4"><a href="#" class="hover:text-green-main">Investidores</a></li>
+                            <li class="mb-4"><a href="#" class="hover:text-green-main">Fornecedores</a></li>
+                        </ul>
+                    </div>
+
+                    <div class=" col-span-1">
+                        <h2 class="text-gray-400 text-xs font-bold mb-4">LINKS ÚTEIS</h2>
+                        <ul class="text-md text-white">
+                            <li class="mb-4"><a href="#" class="hover:text-green-main">Suporte</a></li>
+                            <li class="mb-4"><a href="#" class="hover:text-green-main">Player da Web</a></li>
+                            <li class="mb-4"><a href="#" class="hover:text-green-main">Aplicativo móvel grátis</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="flex justify-end items-start text-white col-span-2">
+                        <ul class="flex text-xl">
+                            <li>
+                                <a href="#" class="p-4 bg-gray-900 rounded-full w-12 h-12 flex justify-center items-center"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="p-4 bg-gray-900 rounded-full w-12 h-12 flex justify-center items-center mx-4"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="p-4 bg-gray-900 rounded-full w-12 h-12 flex justify-center items-center"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center text-gray-500 text-xs mt-10">
+                    <div class="flex-1 items-end">
+                        <ul class="flex">
+                            <li class="pr-7 hover:text-green-main"><a href="">Legal</a></li>
+                            <li class="pr-7 hover:text-green-main"><a href="">Centro do Privacidade</a></li>
+                            <li class="pr-7 hover:text-green-main"><a href="">Política de privacidade</a></li>
+                            <li class="pr-7 hover:text-green-main"><a href="">Cookies</a></li>
+                            <li class="pr-7 hover:text-green-main"><a href="">Sobre anúncios</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="flex justify-end flex-col">
+                        <div class="flex items-center justify-end mb-3 text-center">
+                            <i class="fas fa-globe-americas mr-3"></i>
+                            <p>Brasil</p>
+                        </div>
+
+                        <div>
+                            <p>© 2021 Spotify AB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
